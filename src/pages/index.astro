@@ -1,12 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Title from '../components/atoms/Title.astro'
+import Header from '../components/organisms/header.astro';
+import About from '../components/organisms/about.astro';
+import Education from '../components/organisms/education.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Trilce's Portfolio">
-
-	<Title text="Hello! I'm Trilce" />
+ 	<Header />
+	<About />
+	<Education />
 </Layout>
