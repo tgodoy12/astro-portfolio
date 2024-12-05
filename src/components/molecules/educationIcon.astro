@@ -1,0 +1,28 @@
+---
+import Icon from "../atoms/Icon.astro";
+
+interface Props {
+    src?: string;
+    clase?: string;
+    key?: number;
+    last?: boolean;
+}
+
+const { src, clase, key, last } = Astro.props;
+
+---
+
+<div class="time-line w-fit">
+   
+    <Icon 
+        src={src}
+        clase={clase}
+    />
+   
+
+    <div class={`line h-20 border-l border-[--color-black] w-0 justify-self-center ${last ? 'hidden' : ''}`}>
+       
+    </div>
+
+
+</div>

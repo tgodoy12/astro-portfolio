@@ -4,27 +4,27 @@
         "course": "Full Stack Developement Bootcamp",
         "startDate": "Jun 2024",
         "endDate": "Sep 2024",
-        "icon": ""
+        "icon": "src/assets/educationImages/4geeksLogo.png"
     },
     {
         "institute": "Code Your Future Scholarship - Globant University",
         "course": "Backend with Java",
         "startDate": "Apr 2023",
         "endDate": "Dec 2023",
-        "icon": ""
+        "icon": "src/assets/educationImages/globantLogo.png"
     },
     {
         "institute": "Jóvenes a Programar - Ceibal",
         "course": "Testing",
         "startDate": "Mar 2022",
         "endDate": "Dec 2022",
-        "icon": ""
+        "icon": "src/assets/educationImages/japLogo.png"
     },
     {
         "institute": "Universidad de la República",
         "course": "Introductory Cicle in Biology and Biochemistry",
         "startDate": "Mar 2021",
         "endDate": "Feb 2022",
-        "icon": ""
+        "icon": "src/assets/educationImages/udelarLogo.png"
     }
 ]

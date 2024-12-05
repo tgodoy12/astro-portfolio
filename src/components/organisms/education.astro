@@ -1,7 +1,27 @@
 ---
 import Subtitles from "../atoms/Subtitles.astro";
+import EducationCourses from "../../assets/education.json";
+import EducationIcon from "../molecules/educationIcon.astro";
+
 ---
 
 <div class="mt-10">
     <Subtitles text="Education" />
+
+
+        <div class="mt-4">
+            {EducationCourses.map((course, index) => (
+                <EducationIcon 
+                    key={index}
+                    src={course.icon}
+                    clase="rounded-full border border-[--color-black]"
+                    last={index === EducationCourses.length -1}/>
+            ))}
+        </div>
+    
+        
+
+   
+
+
 </div>
