@@ -2,6 +2,7 @@
 import Subtitles from "../atoms/Subtitles.astro";
 import EducationCourses from "../../assets/education.json";
 import EducationIcon from "../molecules/educationIcon.astro";
+import EducationInfo from "../molecules/educationInfo.astro";
 
 ---
 
@@ -9,14 +10,30 @@ import EducationIcon from "../molecules/educationIcon.astro";
     <Subtitles text="Education" />
 
 
-        <div class="mt-4">
+        <div class="mt-4 flex">
+            <div>
+
             {EducationCourses.map((course, index) => (
                 <EducationIcon 
                     key={index}
                     src={course.icon}
                     clase="rounded-full border border-[--color-black]"
-                    last={index === EducationCourses.length -1}/>
+                    last={index === EducationCourses.length -1}
+                    institution={course.institute}
+                    course={course.course}/>
             ))}
+            </div>
+
+            <!-- <div>
+
+            {EducationCourses.map((course, index) => (
+                <EducationInfo 
+                    key={index}
+                    institution={course.institute}
+                />
+            ))}
+            </div> -->
+
         </div>
     
         

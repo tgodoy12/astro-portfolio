@@ -1,12 +1,13 @@
 ---
 interface Props {
-    text: string;
+    text?: string;
     fontSize?: string;
+    fontWeight?: string;
 }
 
-const { text, fontSize } = Astro.props;
+const { text, fontSize, fontWeight } = Astro.props;
 ---
 
-<h1 class={`text-[${fontSize}] font-extrabold`}>
+<h1 class={`${fontSize} ${fontWeight}`}>
     {text}
 </h1>

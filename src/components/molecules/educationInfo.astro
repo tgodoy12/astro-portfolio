@@ -1,7 +1,16 @@
 ---
+import Title from "../atoms/Title.astro"
 
+interface Props {
+    key?: number;
+    institution?: string;
+    course?: string
+}
+
+const { institution, course } = Astro.props;
 ---
 
-<div>
-    
+<div class="ms-7">
+    <Title text={institution} fontSize="text-[1.1rem]" fontWeight="font-bold" />
+    <p>{course}</p>
 </div>

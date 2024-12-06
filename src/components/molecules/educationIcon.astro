@@ -1,28 +1,37 @@
 ---
 import Icon from "../atoms/Icon.astro";
+import EducationInfo from "./educationInfo.astro";
 
 interface Props {
     src?: string;
     clase?: string;
     key?: number;
     last?: boolean;
+    institution?: string;
+    course?: string;
 }
 
-const { src, clase, key, last } = Astro.props;
+const { src, clase, key, last, institution, course } = Astro.props;
 
 ---
+<div class="flex">
 
-<div class="time-line w-fit">
-   
-    <Icon 
-        src={src}
-        clase={clase}
-    />
-   
-
-    <div class={`line h-20 border-l border-[--color-black] w-0 justify-self-center ${last ? 'hidden' : ''}`}>
+    <div class="time-line w-fit">
        
+        <Icon 
+            src={src}
+            clase={clase}
+        />
+       
+    
+        <div class={`line h-20 border-l border-[--color-black] w-0 justify-self-center ${last ? 'hidden' : ''}`}>
+           
+        </div>
+    
+    
     </div>
-
-
+    
+    <div>
+        <EducationInfo institution={institution} course={course}/>
+    </div>
 </div>
