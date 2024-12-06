@@ -9,9 +9,11 @@ interface Props {
     last?: boolean;
     institution?: string;
     course?: string;
+    startDate?: string;
+    endDate?: string;
 }
 
-const { src, clase, key, last, institution, course } = Astro.props;
+const { src, clase, key, last, institution, course, startDate, endDate } = Astro.props;
 
 ---
 <div class="flex">
@@ -32,6 +34,6 @@ const { src, clase, key, last, institution, course } = Astro.props;
     </div>
     
     <div>
-        <EducationInfo institution={institution} course={course}/>
+        <EducationInfo institution={institution} course={course} startDate={startDate} endDate={endDate}/>
     </div>
 </div>

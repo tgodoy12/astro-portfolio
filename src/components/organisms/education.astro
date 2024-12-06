@@ -1,13 +1,13 @@
 ---
-import Subtitles from "../atoms/Subtitles.astro";
+import Title from "../atoms/Title.astro";
 import EducationCourses from "../../assets/education.json";
 import EducationIcon from "../molecules/educationIcon.astro";
-import EducationInfo from "../molecules/educationInfo.astro";
+
 
 ---
 
 <div class="mt-10">
-    <Subtitles text="Education" />
+    <Title text="Education" fontSize="text-[2.7rem]" fontWeight="font-extrabold"/>
 
 
         <div class="mt-4 flex">
@@ -20,19 +20,12 @@ import EducationInfo from "../molecules/educationInfo.astro";
                     clase="rounded-full border border-[--color-black]"
                     last={index === EducationCourses.length -1}
                     institution={course.institute}
-                    course={course.course}/>
+                    course={course.course}
+                    startDate={course.startDate}
+                    endDate={course.endDate}
+                    />
             ))}
             </div>
-
-            <!-- <div>
-
-            {EducationCourses.map((course, index) => (
-                <EducationInfo 
-                    key={index}
-                    institution={course.institute}
-                />
-            ))}
-            </div> -->
 
         </div>
     
