@@ -1,0 +1,24 @@
+---
+import Title from "../atoms/Title.astro";
+
+type FilterType = 'All' | 'Front' | 'Back' | 'Tools' | 'Learning';
+
+interface Props {
+  onFilterChange: (filter: FilterType) => void;
+}
+
+const handleClick = (filter: FilterType) => {
+  onFilterChange(filter);
+};
+
+const { onFilterChange } = Astro.props;
+
+---
+
+<div class="flex divide-x mt-4">
+    <Title text="All" fontSize="text-[0.8rem]" fontWeight="font-medium" margin="px-3" onClick={() => onFilterChange('All')}/>
+    <Title text="Front" fontSize="text-[0.8rem]" fontWeight="font-medium" margin="px-3" onClick={() => onFilterChange('Front')}/>
+    <Title text="Back" fontSize="text-[0.8rem]" fontWeight="font-medium" margin="px-3" onClick={() => onFilterChange('Back')}/>
+    <Title text="Tools" fontSize="text-[0.8rem]" fontWeight="font-medium" margin="px-3" onClick={() => onFilterChange('Tools')}/>
+    <Title text="Learning" fontSize="text-[0.8rem]" fontWeight="font-medium" margin="px-3" onClick={() => onFilterChange('Learning')}/>
+</div>

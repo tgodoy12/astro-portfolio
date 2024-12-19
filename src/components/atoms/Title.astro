@@ -3,11 +3,13 @@ interface Props {
     text?: string;
     fontSize?: string;
     fontWeight?: string;
+    margin?: string;
+    onClick?: () => void; // Añadimos esta propiedad
 }
 
-const { text, fontSize, fontWeight } = Astro.props;
+const { text, fontSize, fontWeight, margin } = Astro.props;
 ---
 
-<h1 class={`${fontSize} ${fontWeight}`}>
+<h1 class={`${fontSize} ${fontWeight} ${margin}`}>
     {text} 
 </h1>

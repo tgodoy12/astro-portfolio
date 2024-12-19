@@ -1,0 +1,22 @@
+---
+import Icon from "../atoms/Icon.astro";
+import Skills from "../../assets/skills.json"
+
+interface Props {
+    filter: string;
+}
+
+const { filter } = Astro.props;
+
+const filteredSkills = filter === "All" // Si el prop filter es === "All"
+    ? Skills // Se muestra toda la lista completa de skills
+    : Skills.filter((skill) => skill.type === filter); // si no, se filtra la lista con la palabra enviada por props
+---
+
+<div class="carousel flex">
+    {
+        filteredSkills.map(skill => (
+            <Icon src={skill.icon} />
+        ))
+    }
+</div>

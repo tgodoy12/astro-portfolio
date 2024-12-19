@@ -1,92 +1,116 @@
 [
     {
         "name": "HTML",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"
 
     },
     {
         "name": "CSS",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg"
 
     },
     {
         "name": "Javascript",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": ""
 
     },
     {
         "name": "React",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": ""
 
     },
     {
         "name": "Tailwind.css",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": ""
 
     },
     {
         "name": "Bootstrap",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": ""
 
     },
     {
         "name": "Astro",
-        "icon": "",
-        "url": ""
+        "type": "Front",
+        "icon": ""
 
     },
     {
         "name": "Python",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
         "name": "Flask",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
         "name": "SQLAlquemy",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
         "name": "Java",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
         "name": "Spring Boot",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
         "name": "MySQL",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
         "name": "PostreSQL",
-        "icon": "",
-        "url": ""
+        "type": "Back",
+        "icon": ""
 
     },
     {
-        "name": "Flask",
-        "icon": "",
-        "url": ""
-
+        "name": "Git",
+        "type": "Tools",
+        "icon": ""
+    },
+    {
+        "name": "Github",
+        "type": "Tools",
+        "icon": ""
+    },
+    {
+        "name": "Visual Studio Code",
+        "type": "Tools",
+        "icon": ""
+    },
+    {
+        "name": "IntelliJ",
+        "type": "Tools",
+        "icon": ""
+    },
+    {
+        "name": "Figma",
+        "type": "Tools",
+        "icon": ""
+    },
+    {
+        "name": "Postman",
+        "type": "Tools",
+        "icon": ""
     }
 ]

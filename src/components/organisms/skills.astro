@@ -1,8 +1,21 @@
 ---
 import Title from "../atoms/Title.astro"
+import SkillsFilter from "../molecules/skillsFilter.astro"
+import SkillsCarousel from "../molecules/skillsCarousel.astro"
+
+// Define los valores posibles de "filter" como un tipo literal.
+type FilterType = 'All' | 'Front' | 'Back' | 'Tools' | 'Learning';
+
+let activeFilter: FilterType = 'All';
+
+const handleFilterChange = (filter: FilterType) => {
+  activeFilter = filter; // Esto ahora está correctamente tipado.
+};
 ---
 
 <div class="mt-10">
     <Title text="Skills" fontSize="text-[2.7rem]" fontWeight="font-extrabold" />
 
+    <SkillsFilter onFilterChange={handleFilterChange}/>
+    <SkillsCarousel filter={activeFilter}/>
 </div>
